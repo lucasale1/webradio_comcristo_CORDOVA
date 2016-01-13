@@ -1,0 +1,267 @@
+*{margin:0; padding:0;}
+
+body{
+	background: #000;	
+	margin:0;
+  	padding:0;
+  	height:100%;
+  	width:100%;
+}
+
+.app{	
+  	left:0;
+  	margin:0;
+  	padding:0;
+  	height:100%;
+  	width:100%;
+}
+
+.audio-player{
+	position:absolute;
+	left:0;
+  	bottom:0;
+	margin:0;
+  	padding:0;
+  	width:100%;
+}
+
+.cc_streaminfo{
+	font-family:'Dosis','sans-serif';
+	font-weight:400;
+	font-size:20px;
+}
+
+#infMusic{
+	position:relative;
+	bottom:68px;
+	left:0;
+	background:#3F4F3F;
+	height:150px;	
+	width:100%;
+}
+
+
+#infMusic img{
+	float:left;
+	height: 128px;
+	width: 128px;
+	margin-left:10px;
+	margin-top:10px;;	
+	border:0;
+	padding:0;
+}
+
+#infMusic br{
+	display:blok;		
+	line-height:24px;
+}
+
+#infMusic span{
+	float:top;				
+	margin-left:10px;
+	margin-top:10px;
+	max-width:180px;
+	overflow: hidden;	
+}
+
+#carregando{
+	color:red;
+}
+
+#controls{	
+	position:absolute;
+	left:0;
+  	bottom:0;
+  	padding:0;  	
+	background:#3B483B;	
+	height:68px;
+	width:100%;
+}
+
+
+#controls img{
+	height: 28px;
+	width: 28px;
+	margin-left:15px;
+	margin-right:10px;
+	margin-top:19px;		
+	/*top:20px;*/
+	/*left:120px;*/
+}
+
+#controls #playPause{
+	margin-bottom:15px;
+	margin-left:10px;
+	margin-top:10px;
+	float:left;
+	height:48px;
+	width:48px;
+	!important;
+}
+
+
+
+#volume{
+	height:28px;
+	width:60px;
+} 
+
+input[type=range] {
+  -webkit-appearance: none;
+  margin: 18px 0;
+  width: 100%;
+  background:#3B483A;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 1px 1px 1px #3B483B, 0px 0px 1px #3B483A;//#0d0d0d; //#000000, 0px 0px 1px #0d0d0d;
+  background: #3071a9;
+  border-radius: 1.3px;
+  border: 0.2px solid  #3B483A;//#010101;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 25px;
+  width: 10px;
+  border-radius: 3px;
+  background: #0f0f0f;//#ffffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -9px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #367ebd;
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #3071a9;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 25px;
+  width: 10px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #2a6495;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type=range]::-ms-fill-upper {
+  background: #3071a9;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type=range]::-ms-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 25px;
+  width: 10px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #3071a9;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #367ebd;
+}
+
+/*
+@-webkit-keyframes marquee {
+  0%   { transform: translate(0, 0); }
+  100% { transform: translate(-150%, 0); }
+} 
+
+/* define your limiting container
+.marquee {
+  /*border: solid 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  /*box-sizing: border-box;
+}
+
+/* this is the tray moving around your container */
+/*
+.marquee span {
+  display: inline-block;
+  padding-left: 100%;
+  text-indent: 0;
+  animation: marquee 10s linear infinite; /* here you select the animation 
+  -webkit-animation: marquee 10s linear infinite; /* here you select the animation 
+}*/
+
+/* pause the animation on mouse over */
+/*
+.marquee span:hover {
+  animation-play-state: paused;
+  -webkit-animation-play-state: paused;
+}*/
+
+
+
+
+h1 {
+    font-size:24px;
+    font-weight:normal;
+    margin:0px;
+    overflow:visible;
+    padding:0px;
+    text-align:center;
+}
+
+.event {
+    border-radius:4px;
+    -webkit-border-radius:4px;
+    color:#FFFFFF;
+    font-size:12px;
+    margin:0px 30px;
+    padding:2px 0px;
+}
+
+
+@keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+@-webkit-keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+.blink {
+    animation:fade 3000ms infinite;
+    -webkit-animation:fade 3000ms infinite;
+}
